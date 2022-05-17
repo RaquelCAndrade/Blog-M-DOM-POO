@@ -26,7 +26,7 @@ class Api {
           iniciaModal("modalContainerFracasso");
 
           setTimeout(function () {
-            window.location.href = "./cadastro.html";
+            window.location.href = "./index.html";
           }, 3000);
         }
       });
