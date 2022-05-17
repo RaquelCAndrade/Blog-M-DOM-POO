@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/cadastrologin.css" />
+    <title>Entrega - Blog</title>
+  </head>
+  <body>
+    <section id="sectionCadastro">
+      <form id="formCadastro">
+        <h1>Cadastro</h1>
+        <input
+          type="text"
+          name="username"
+          id="usuarioCadastro"
+          placeholder="Nome de usuário"
+        />
+        <input
+          type="email"
+          name="email"
+          id="emailCadastro"
+          placeholder="Email"
+        />
+        <input
+          type="url"
+          name="avatarUrl"
+          id="fotoCadastro"
+          placeholder="Foto de Perfil (url)"
+        />
+        <input
+          type="password"
+          name="password"
+          id="senhaCadastro"
+          placeholder="Senha"
+        />
+        <button type="submit">Cadastrar</button>
+        <a href="./pages/login.html">Já possui cadastro? Então faça o login</a>
+      </form>
+    </section>
+
+    <div id="modalContainerSucesso" class="modal-container">
+      <div class="modalSucesso">
+        <p class="textoModal">Cadastro realizado com Sucesso!</p>
+        <p class="textoModal">
+          Direcionando para a tela de Login em 5 segundos.
+        </p>
+        <p class="textoModal">
+          Se não for automaticamente,
+          <a class="cliqueAqui" href="./pages/login.html">clique aqui</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="modalContainerFracasso" class="modal-container">
+      <div class="modalFracasso">
+        <p class="textoModal">Cadastro não realizado</p>
+        <p class="textoModal">
+          Usuário já existente ou dados faltando no cadastro
+        </p>
+        <p class="textoModal">Retornando ao cadastro</p>
+      </div>
+    </div>
+
+    <script type="module" src="./src/js/Usuarios.js"></script>
+    <script type="module" src="./src/js/cadastro.js"></script>
+  </body>
+</html>

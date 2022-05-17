@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/styles/reset.css" />
+    <link rel="stylesheet" href="../src/styles/cadastrologin.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <section id="sectionLogin">
+      <form id="formLogin">
+        <h1>Login</h1>
+        <input type="text" name="email" id="emailLogin" placeholder="Email" />
+        <input
+          type="password"
+          name="password"
+          id="senhaLogin"
+          placeholder="Senha"
+        />
+        <button>Login</button>
+        <a href="../cadastro.html"
+          >Ainda não possui cadastro? Então cadastre-se</a
+        >
+      </form>
+    </section>
+
+    <div id="modalLoginSucesso" class="modal-container">
+      <div class="modalSucesso">
+        <p class="textoModal">Login realizado com Sucesso!</p>
+        <p class="textoModal">Entrando no blog.</p>
+      </div>
+    </div>
+
+    <div id="modalLoginFracasso" class="modal-container">
+      <div class="modalFracasso">
+        <p class="textoModal">Login não realizado</p>
+        <p class="textoModal">Usuário não cadastrado ou dados incorretos</p>
+      </div>
+    </div>
+
+    <script type="module" src="../src/js/login.js"></script>
+  </body>
+</html>
